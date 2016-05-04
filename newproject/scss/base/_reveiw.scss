@@ -1,0 +1,256 @@
+
+
+.carousel-indicatorsTwo {
+	position: relative;
+	bottom: 10px;
+	left: 0%;
+	z-index: 15;
+	width: 100%;
+	padding-left: 0;
+	margin-left: 0%;
+	text-align: center;
+	list-style: none;
+	.active {
+		@include grayscale(0);
+		border: $color-primary solid 2px;
+		
+      
+       
+	}
+	li {
+		width: 120px;
+		height: 120px;
+		margin: 1px;
+		text-indent: -999px;
+		cursor: pointer;
+		background-color: #000 \9;
+		background-color: rgba(0, 0, 0, 0);
+		border-radius: 0px;
+		float: left;
+		margin-bottom: 5px;
+		@include grayscale(1);
+		border: transparent solid 2px;
+		&:hover {
+			@include grayscale(0);
+			border: $color-primary solid 2px;
+			
+		}
+	}
+	.active {
+		width: 120px;
+		height: 121px;
+		margin-bottom: 5px;
+	}
+}
+
+
+
+
+
+.myCarouselTwo {
+	.bg-primary {
+		background: $color-primary url(../images/Triangle-Bottom-Left.png) no-repeat 100% 0;
+		padding: 80px 0;
+	}
+	.dp-photo {
+		$dp-photo-size: 150px;
+		width: $dp-photo-size;
+		height: $dp-photo-size;
+		border: $color-primary solid 1px;
+		@include border-radius($dp-photo-size / 2);
+		margin-left: 30%;
+	}
+	.db-1,
+	.display-pic-1 {
+		background: url(../images/db/db-1.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-2,
+	.display-pic-2 {
+		background: url(../images/db/db-2.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-3,
+	.display-pic-3 {
+		background: url(../images/db/db-3.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-4,
+	.display-pic-4 {
+		background: url(../images/db/db-4.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-5,
+	.display-pic-5 {
+		background: url(../images/db/db-5.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-6,
+	.display-pic-6 {
+		background: url(../images/db/db-6.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-7,
+	.display-pic-7 {
+		background: url(../images/db/db-7.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-8,
+	.display-pic-8 {
+		background: url(../images/db/db-8.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-9,
+	.display-pic-9 {
+		background: url(../images/db/db-9.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-10,
+	.display-pic-10 {
+		background: url(../images/db/db-10.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-11,
+	.display-pic-11 {
+		background: url(../images/db/db-11.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-12,
+	.display-pic-12 {
+		background: url(../images/db/db-12.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-13,
+	.display-pic-13 {
+		background: url(../images/db/db-13.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-14,
+	.display-pic-14 {
+		background: url(../images/db/db-14.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-15,
+	.display-pic-15 {
+		background: url(../images/db/db-15.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-16,
+	.display-pic-16 {
+		background: url(../images/db/db-16.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-17,
+	.display-pic-17 {
+		background: url(../images/db/db-17.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-18,
+	.display-pic-18 {
+		background: url(../images/db/db-18.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-19,
+	.display-pic-19 {
+		background: url(../images/db/db-19.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-20,
+	.display-pic-20 {
+		background: url(../images/db/db-20.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-21,
+	.display-pic-21 {
+		background: url(../images/db/db-21.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-22,
+	.display-pic-22 {
+		background: url(../images/db/db-22.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-23,
+	.display-pic-23 {
+		background: url(../images/db/db-23.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-24,
+	.display-pic-24 {
+		background: url(../images/db/db-24.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-25,
+	.display-pic-25 {
+		background: url(../images/db/db-25.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-26,
+	.display-pic-26 {
+		background: url(../images/db/db-26.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-27,
+	.display-pic-27 {
+		background: url(../images/db/db-27.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-28,
+	.display-pic-28 {
+		background: url(../images/db/db-28.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-29,
+	.display-pic-29 {
+		background: url(../images/db/db-29.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-30,
+	.display-pic-30 {
+		background: url(../images/db/db-30.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-31,
+	.display-pic-31 {
+		background: url(../images/db/db-31.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-32,
+	.display-pic-32 {
+		background: url(../images/db/db-32.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-33,
+	.display-pic-33 {
+		background: url(../images/db/db-33.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-34,
+	.display-pic-34 {
+		background: url(../images/db/db-34.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-35,
+	.display-pic-35 {
+		background: url(../images/db/db-35.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.db-36,
+	.display-pic-36 {
+		background: url(../images/db/db-36.jpg) no-repeat center center;
+		@include bgcover(cover);
+	}
+	.reviews {
+		.col-sm-6 {
+			padding: 0;
+		}
+	}
+	.content-reveiw {
+		text-align: center;
+		padding: 80px 100px 50px 0px;
+		font-size: $font-size-regular;
+		.content-reveiw em {
+			font-size: $font-size-large
+		}
+	}
+}

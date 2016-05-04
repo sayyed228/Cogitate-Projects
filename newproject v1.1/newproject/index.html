@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cogent | Dashboard</title>
+<!-- Bootstrap -->
+<link href="vendor/css/bootstrap.min.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link href="assets/css/style.css" rel="stylesheet" media="all">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="myApp">
+<!-- <input type="text" value="" id="windowsize"> -->
+<div class="main-wrap">
+  <div class="sidebar"> <img src="assets/images/logo.png" alt="" class="logo"/>
+    <div class="clearfix"></div>
+    <ul class="menu">
+      <li ng-click="Dashboard()"><a href="#/"><img src="assets/images/dashboard-32.png" alt=""/> Dashboard</a></li>
+      <li><a href="#"><img src="assets/images/resource-allocation.png" alt=""/> Resource Allocation</a></li>
+      <li><a href="#"><img src="assets/images/SMART.png" alt=""/> SMART</a></li>
+      <li><a href="#"><img src="assets/images/Team.png" alt=""/> Cogitate Team Section</a></li>
+      <li><a href="#"><img src="assets/images/project-owner.png" alt=""/> Project Owner</a></li>
+      <li><a href="#"><img src="assets/images/code-review.png" alt=""/> Code Review</a></li>
+      <li><a href="#"><img src="assets/images/leave-section.png" alt=""/> Leave Section</a></li>
+    </ul>
+  </div>
+  <div class="main-container">
+    <div class="top-bar">
+      <h1 class="pull-left"><i class="fa fa-bars" aria-hidden="true" id="listBtn1"></i><i class="fa fa-bars" aria-hidden="true" id="listBtn2"></i>&nbsp; <span id="pageHeading">Dashboard</span></h1>
+      <div class="pull-right"><img src="assets/images/notification.png" alt=""> <img src="assets/images/setting.png" alt=""> <img src="assets/images/logout.png" alt=""></div>
+    </div>
+    <div class="inner-container">
+      <div class="panel_header"> Latest Statistics </div>
+      <div class="panel_conainter">
+        <table width="100%" border="0" class="table table-bordered table-striped" cellspacing="0" cellpadding="0" ng-controller="LatestStatistics">
+          <thead>
+            <tr>
+              <td><strong>Sr No.</strong></td>
+              <td><strong>Comment</strong></td>
+              <td><strong>Comments Date</strong></td>
+              <td><strong>Project Status</strong></td>
+              <td><strong>Open/Total Defect Count</strong></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="x in names">
+              <td class="text-center">{{$index +1}}</td>
+              <td>{{x.Comments}}</td>
+              <td class="text-center">{{x.CommentsDate}}</td>
+              <td class="text-center"><i class="fa fa-circle {{x.Indicator}}" aria-hidden="true"></i></td>
+              <td class="text-center">{{x.TotalDefects}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="vendor/js/jquery.min.js"></script> 
+<script src="vendor/js/bootstrap.min.js"></script> 
+<script src="vendor/js/angular.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script> 
+<script>
+$(document).ready(function(e) {
+   
+   $('#listBtn1').click(function() {
+	 $(this).hide(); 
+	 $('#listBtn2').show();
+	 $('.sidebar').hide();   
+	 $('.main-container').css('margin-left','0px')
+   });
+   
+   $('#listBtn2').click(function() {
+	 $(this).hide();
+	 $('#listBtn1').show(); 
+	 $('.sidebar').show();   
+	 $('.main-container').css('margin-left','270px')
+   });
+   
+   /*
+	$(window).resize(function(e) {
+     $('#windowsize').val($(window).width())       
+    });
+	
+	
+
+    
+    if ($("body").height() > $(window).height()) {
+		
+        var mainContainer = $('.inner-container').height()
+		$('.sidebar').height(mainContainer);
+		console.log('01')
+		alert(mainContainer)
+    }
+    else {
+		var winHight = $(window).height()
+		$('.sidebar').height(winHight);
+		console.log('02')
+		
+		}
+		
+	
+    $('.menu li').click(function() {
+	 $('#pageHeading').text($(this).text());
+	  
+	  });*/
+
+	
+	
+});
+
+</script> 
+<script>
+ 
+ var app = angular.module('myApp', ['ngRoute']);
+
+
+// Configure routing for the application
+app.config(function ($routeProvider) {
+
+    $routeProvider
+        .when('/', {
+        templateUrl: 'templates/dashboard.html'
+    })
+
+    .when('/Resource Allocation', {
+        templateUrl: 'templates/resource-allocation.html'
+    })
+
+    .when('/SMART', {
+            templateUrl: 'templates/SMART.html'
+        })
+        .when('/Cogitate Team Section', {
+            templateUrl: 'templates/cogitate-team-section.html'
+        })
+        .when('/Project Owner', {
+            templateUrl: 'templates/project-owner.html'
+        })
+        .when('/Code Review', {
+            templateUrl: 'templates/code-review.html'
+        })
+        .when('/Leave Section', {
+            templateUrl: 'templates/leave-section.html'
+        })
+}); 
+
+
+
+app.controller('LatestStatistics', function($scope, $http) {
+    $http.get("LatestStatistics.json").then(function(response) {
+        $scope.names = response.data.records;
+    });
+	
+	
+	
+	
+});
+
+
+</script>
+</body>
+</html>

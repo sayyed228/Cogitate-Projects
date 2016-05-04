@@ -1,0 +1,114 @@
+{ "records":[{  
+      "CommentsDate":"Agent App - Evo",
+      "Comments":"Internal QA round completed. There are challenges in deployment to production. This has led to some delay in",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"red",
+	  "TotalDefects":"6/89"
+   },
+   {  
+      "CommentsDate":"Agent App Factory",
+      "Comments":"NC build successfully deployed in production. GA UAT release planned for 29th Jan.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"green",
+	  "TotalDefects":"7/78"
+   },
+   {  
+      "CommentsDate":"Endorsement",
+      "Comments":"Project is delayed till end of Jan due to resource bandwid-th. This has been communicated to Diane.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"red",
+	  "TotalDefects":"2/25"
+   },
+   {  
+      "CommentsDate":"epolicy - Phase 2",
+      "Comments":"Internal QA round completed. There are challenges in deployment to production. This has led to some delay in ",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"green",
+	  "TotalDefects":"33/96"
+   },
+   {  
+      "CommentsDate":"IH Internal",
+      "Comments":"Project currently underway. Ashwin's availability could be a challenge for this project.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"yellow",
+	  "TotalDefects":"8/78"
+   },
+   {  
+      "CommentsDate":"ISG - BI Portal",
+      "Comments":"UAT deployment completed. Rekha to check if the deploy-ment is successful and revert for changes, if any.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"red",
+	  "TotalDefects":"8/22"
+   },
+   {  
+      "CommentsDate":"ISG - BR Systems",
+      "Comments":"Project ready to be deployed in client environment on 22nd Jan. Initial requirement study for phase 2 in progress.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red",
+	  "TotalDefects":"5/99"
+   },
+   {  
+      "CommentsDate":"Agent App - Evo",
+      "Comments":"Internal QA round completed. There are challenges in deployment to production. This has led to some delay in",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"red",
+	  "TotalDefects":"6/89"
+   },
+   {  
+      "CommentsDate":"Agent App Factory",
+      "Comments":"NC build successfully deployed in production. GA UAT release planned for 29th Jan.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"green",
+	  "TotalDefects":"7/78"
+   },
+   {  
+      "CommentsDate":"Endorsement",
+      "Comments":"Project is delayed till end of Jan due to resource bandwid-th. This has been communicated to Diane.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"red",
+	  "TotalDefects":"2/25"
+   },
+   {  
+      "CommentsDate":"epolicy - Phase 2",
+      "Comments":"Internal QA round completed. There are challenges in deployment to production. This has led to some delay in ",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"green",
+	  "TotalDefects":"33/96"
+   },
+   {  
+      "CommentsDate":"IH Internal",
+      "Comments":"Project currently underway. Ashwin's availability could be a challenge for this project.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"yellow",
+	  "TotalDefects":"8/78"
+   },
+   {  
+      "CommentsDate":"ISG - BI Portal",
+      "Comments":"UAT deployment completed. Rekha to check if the deploy-ment is successful and revert for changes, if any.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red-circle.png",
+	  "Indicator":"red",
+	  "TotalDefects":"8/22"
+   },
+   {  
+      "CommentsDate":"ISG - BR Systems",
+      "Comments":"Project ready to be deployed in client environment on 22nd Jan. Initial requirement study for phase 2 in progress.",
+	  "CommentsDate":"01/21/2016",
+	  "Indicator":"red",
+	  "TotalDefects":"5/99"
+   }
+   
+]
+}
+

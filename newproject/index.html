@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cogent | Dashboard</title>
+<!-- Bootstrap -->
+<link href="vendor/css/bootstrap.min.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link href="assets/css/style.css" rel="stylesheet" media="all">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="myApp">
+
+<div class="main-wrap">
+  <div class="sidebar"> <img src="assets/images/logo.png" alt="" class="logo"/>
+    <div class="clearfix"></div>
+    <ul class="menu">
+      <li><a href="#/"><img src="assets/images/dashboard-32.png" alt=""/> Dashboard</a></li>
+      <li><a href="#Resource Allocation"><img src="assets/images/resource-allocation.png" alt=""/> Resource Allocation</a></li>
+      <li><a href="#SMART"><img src="assets/images/SMART.png" alt=""/> SMART</a></li>
+      <li><a href="#Cogitate Team Section"><img src="assets/images/Team.png" alt=""/> Cogitate Team Section</a></li>
+      <li><a href="#Project Owner"><img src="assets/images/project-owner.png" alt=""/> Project Owner</a></li>
+      <li><a href="#Code Review"><img src="assets/images/code-review.png" alt=""/> Code Review</a></li>
+      <li><a href="#Leave Section"><img src="assets/images/leave-section.png" alt=""/> Leave Section</a></li>
+    </ul>
+  </div>
+  <div class="main-container">
+   <div ng-include="'templates/top-bar.htm'"></div>
+    <div class="inner-container">
+       <div ng-view></div>
+    </div>
+    </div>
+  </div>
+
+<script src="vendor/js/jquery.min.js"></script> 
+<script src="vendor/js/bootstrap.min.js"></script> 
+<script src="vendor/js/angular.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script> 
+<script src="assets/js/custom.js"></script> 
+
+
+</body>
+</html>

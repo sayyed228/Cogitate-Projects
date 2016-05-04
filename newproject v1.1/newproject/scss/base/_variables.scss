@@ -1,0 +1,18 @@
+@import "compass";
+$color-primary: #fd7400;
+$features-layout: vertical;
+$accent-1: #fff;
+$accent-2: #fef8f2;
+$accent-3: #cc3344;
+$accent-4: #464646;
+$font-size-small:1em;
+$font-size-regular:$font-size-small * 1.3;
+$font-size-large:$font-size-small * 2;
+$font-size-x-large:null;
+$font-size-xx-large:$font-size-small * 2.8;
+$font-size-xxx-large:null;
+$font-size-xxxx-large:null;
+$features-spacing: 40px;
+$features-chat-spacing: 60px;
+@import "features/*.png";
+@include all-features-sprites;

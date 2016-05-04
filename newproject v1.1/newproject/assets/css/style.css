@@ -1,0 +1,127 @@
+/* line 10, ../../scss/style.scss */
+.fa-circle {
+  font-size: 18px; }
+
+/* line 11, ../../scss/style.scss */
+.red {
+  color: #E74C3C; }
+
+/* line 12, ../../scss/style.scss */
+.yellow {
+  color: #f39c12; }
+
+/* line 13, ../../scss/style.scss */
+.green {
+  color: #2ecc71; }
+
+/* line 14, ../../scss/style.scss */
+body {
+  background: #f9f9f9; }
+
+/* line 17, ../../scss/style.scss */
+.zero, .top-bar h1 {
+  margin: 0;
+  padding: 0; }
+
+/* line 22, ../../scss/style.scss */
+.main-wrap .sidebar {
+  float: left;
+  width: 270px;
+  border-right: #d2dce6 solid 1px;
+  background: #fff; }
+  /* line 27, ../../scss/style.scss */
+  .main-wrap .sidebar .logo {
+    margin: 15px 0 0 30px; }
+/* line 31, ../../scss/style.scss */
+.main-wrap .main-container {
+  width: auto;
+  margin-left: 270px; }
+
+/* line 36, ../../scss/style.scss */
+.inner-container {
+  margin: 15px 13px 0px 13px; }
+  /* line 38, ../../scss/style.scss */
+  .inner-container .panel {
+    margin-bottom: 0px; }
+  /* line 41, ../../scss/style.scss */
+  .inner-container .panel-default > .panel-heading {
+    color: #546a79;
+    background-color: #f6f8f9;
+    border-color: #ddd;
+    font-size: 16px; }
+
+/* line 48, ../../scss/style.scss */
+.menu {
+  margin: 30px 20px 0 -40px;
+  width: 310px; }
+  /* line 51, ../../scss/style.scss */
+  .menu li,
+  .menu ul {
+    margin: 0 0 0 0;
+    list-style-type: none;
+    border: #ccc solid 0px;
+    font-size: 16px;
+    color: #7f96a3;
+    display: block; }
+    /* line 59, ../../scss/style.scss */
+    .menu li a,
+    .menu ul a {
+      color: #7f96a3;
+      display: block;
+      padding: 15px 5px 15px 30px; }
+    /* line 64, ../../scss/style.scss */
+    .menu li a:hover,
+    .menu ul a:hover {
+      color: #7f96a3;
+      text-decoration: none;
+      background: #e9ecf0; }
+  /* line 70, ../../scss/style.scss */
+  .menu img {
+    margin-right: 5px; }
+
+/* line 74, ../../scss/style.scss */
+.top-bar {
+  border-bottom: #c6d2de solid 1px;
+  background: #fff;
+  color: #546a79;
+  height: 55px; }
+  /* line 79, ../../scss/style.scss */
+  .top-bar h1 {
+    padding: 15px 20px 15px 15px;
+    font-size: 22px; }
+  /* line 84, ../../scss/style.scss */
+  .top-bar .pull-right {
+    padding-right: 10px; }
+    /* line 86, ../../scss/style.scss */
+    .top-bar .pull-right img {
+      margin-top: 10px; }
+
+/* line 92, ../../scss/style.scss */
+.panel_header {
+  background: #fff;
+  padding: 10px 10px;
+  border: #dce4ec solid 1px;
+  border-bottom: none;
+  font-weight: bold;
+  font-size: 16px; }
+
+/* line 93, ../../scss/style.scss */
+.panel_conainter {
+  background: #fff; }
+
+/* line 94, ../../scss/style.scss */
+#listBtn2 {
+  display: none; }
+
+/* line 95, ../../scss/style.scss */
+#listBtn1, #listBtn2 {
+  cursor: pointer; }
+
+/***** Bootstrap CSS overwrite *******/
+/* line 99, ../../scss/style.scss */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #FDFCFC; }
+
+/* line 103, ../../scss/style.scss */
+.table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+  border-bottom-width: 1px; }

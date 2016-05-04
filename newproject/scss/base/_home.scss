@@ -1,0 +1,57 @@
+.wow:first-child {
+	visibility: hidden;
+}
+
+.wow {
+	visibility: hidden;
+}
+
+.ballons {
+	width: 124px;
+	height: 89px;
+	position: absolute;
+}
+
+.ballonOne {
+	@extend .ballons;
+	left: 5/100*100%;
+	top: 5/100*100%;
+}
+
+.ballonTwo {
+	@extend .ballons;
+	left: 3.5/100*100%;
+	top: 29/100*100%;
+}
+
+.ballonThree {
+	@extend .ballons;
+	left: 29/100*100%;
+	top: 21.5/100*100%;
+}
+
+.ballonFour {
+	@extend .ballons;
+	left: 49.5/100*100%;
+	top: 21.5/100*100%;
+}
+
+.ballonFive {
+	@extend .ballons;
+	left: 69/100*100%;
+	top: 23.5/100*100%;
+}
+
+.ballonSix {
+	@extend .ballons;
+	left: 10/100*100%;
+	/*bottom: 0;
+	margin-top:-428px;*/
+}
+
+.ballonSeven {
+	@extend .ballons;
+	right: 30/100*100%;
+	bottom: 14/100*100%;
+}
+

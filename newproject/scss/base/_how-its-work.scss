@@ -1,0 +1,103 @@
+.how-its-wroks {
+	background: url(../images/bg-1.jpg) no-repeat center center fixed;
+	@include bgcover(cover);
+	h2 {
+		color: $accent-1
+	}
+	.points {
+		position: absolute;
+		right: 180px;
+		font-size: 1.4em;
+		padding-top: 0px;
+		color: $accent-1
+	}
+	.points1 {
+		@extend .points;
+	}
+	.points2 {
+		@extend .points;
+		top: 94px;
+	}
+	.points3 {
+		@extend .points;
+		top: 305px;
+	}
+	.points4 {
+		@extend .points;
+		top: 400px;
+	}
+}
+
+#myCarouselThree {
+	width: 196px;
+	position: absolute;
+	left: 33.9%;
+	top: 14%;
+	z-index: 999
+}
+
+.screens {
+	background: $accent-2
+}
+
+.video {
+	background: $accent-2;
+}
+
+.video h5 {
+	font-style: italic;
+	color: $accent-3;
+	font-size: 30px;
+	margin-bottom: 30px;
+	margin-top: -30px;
+}
+
+.carousel-indicators-HowItWorks {
+	top: -90px;
+	left: -196%;
+	margin-left: 0%;
+	li {
+		display: inline-block;
+		width: 64px;
+		height: 64px;
+		margin: 1px;
+		text-indent: -999px;
+		cursor: pointer;
+		border: 0px solid #fff;
+		border-radius: 0px;
+		@include grayscale(1)
+	}
+	
+	
+	
+	
+		.active {
+		width: 64px;
+		height: 64px;
+		margin: 0;
+		background-color: transparent;
+		@include grayscale(0)
+	}
+	
+	
+	.step-1 {
+		background: url(../images/step-1.png) no-repeat center center;
+		margin-bottom: 26px ;
+	}
+	
+	.step-2 {
+		background: url(../images/step-2.png) no-repeat center center;
+		margin-bottom: 153px;
+	}
+	
+	.step-3 {
+		background: url(../images/step-3.png) no-repeat center center;
+		margin-bottom: 30px;
+	}
+	
+	.step-4 {
+		background: url(../images/step-4.png) no-repeat center center;
+	}
+	
+	
+}

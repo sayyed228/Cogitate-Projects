@@ -1,0 +1,105 @@
+@import "compass/css3";
+$Primary-color: #1d95e8;
+$RegentGray:#7f96a3;
+$AthensGray:#e9ecf0;
+$white-color:#fff;
+$BlueBayoux:#546a79;
+$red:#E74C3C;
+$yellow:#f39c12;
+$green:#2ecc71;
+.fa-circle { font-size:18px;}
+.red {color:$red;}
+.yellow {color:$yellow;}
+.green {color:$green;}
+body {
+    background: #f9f9f9; 
+}
+.zero {
+    margin: 0;
+    padding: 0;
+}
+.main-wrap {
+    .sidebar {
+        float: left;
+        width: 270px;
+        border-right: #d2dce6 solid 1px;
+        background: #fff;
+        .logo {
+            margin: 15px 0 0 30px
+        }
+    }
+    .main-container {
+        width: auto;
+        margin-left: 270px;
+    }
+}
+.inner-container {
+    margin: 15px 13px 0px 13px;
+    .panel {
+        margin-bottom: 0px;
+    }
+    .panel-default>.panel-heading {
+        color: $BlueBayoux;
+        background-color: #f6f8f9;
+        border-color: #ddd;
+		font-size:16px;
+    }
+}
+.menu {
+    margin: 30px 20px 0 -40px;
+    width: 310px;
+    li,
+    ul {
+        margin: 0 0 0 0;
+        list-style-type: none;
+        border: #ccc solid 0px;
+        font-size: 16px;
+        color: $RegentGray;
+        display: block;
+        a {
+            color: $RegentGray;
+            display: block;
+            padding: 15px 5px 15px 30px;
+        }
+        a:hover {
+            color: $RegentGray;
+            text-decoration: none;
+            background: $AthensGray;
+        }
+    }
+    img {
+        margin-right: 5px;
+    }
+}
+.top-bar {
+    border-bottom: #c6d2de solid 1px;
+    background: $white-color;
+    color: $BlueBayoux;
+    height: 55px;
+    h1 {
+        @extend .zero;
+        padding: 15px 20px 15px 15px;
+        font-size: 22px;
+    }
+    .pull-right {
+        padding-right: 10px;
+        img {
+            margin-top: 10px;
+        }
+    }
+}
+
+.panel_header { background:$white-color;padding:10px 10px;border:#dce4ec solid 1px;border-bottom:none; font-weight:bold; font-size:16px}
+.panel_conainter { background:$white-color}
+#listBtn2 { display:none;}
+#listBtn1, #listBtn2 { cursor:pointer;}
+
+/***** Bootstrap CSS overwrite *******/
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #FDFCFC;
+}
+
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border-bottom-width: 1px;
+}

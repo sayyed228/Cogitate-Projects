@@ -1,0 +1,16 @@
+@mixin bgcover($bgval) {
+	-webkit-background-size: $bgval;
+	-moz-background-size: $bgval;
+	-o-background-size: $bgval;
+	background-size: $bgval;
+}
+
+@mixin grayscale($grayscaleValue) {
+	filter: grayscale($grayscaleValue);
+	-webkit-filter: grayscale($grayscaleValue);
+	-moz-filter: grayscale($grayscaleValue);
+	-o-filter: grayscale($grayscaleValue);
+	-ms-filter: grayscale($grayscaleValue);
+}
+
+
